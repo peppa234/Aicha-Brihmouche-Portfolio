@@ -69,9 +69,9 @@ const Projects = () => {
           description: "Website UI/UX for K2A rental cars with brand-consistent components and flows.",
           technologies: ["Figma", "Design System", "Prototyping"],
           images: [
-            "./src/assets/projects/K2AUIUX1.png",
-            "./src/assets/projects/K2AUIUX3.png",
-            "./src/assets/projects/K2AUIUX2.png"
+            "/src/assets/projects/K2AUIUX1.png",
+            "/src/assets/projects/K2AUIUX3.png",
+            "/src/assets/projects/K2AUIUX2.png"
           ],
           github: "#",
           live: "#"
@@ -82,14 +82,14 @@ const Projects = () => {
           description: "Engaging post series for K2A brand promotions and campaigns.",
           technologies: ["Photoshop", "Illustrator", "Branding" , "Marketing"],
           images: [
-            "./src/assets/projects/POSTK2A2.png",
-            "./src/assets/projects/POSTK2A1.png",
-            "./src/assets/projects/POSTK2A3.png",
-            "./src/assets/projects/POSTK2A7.png",
-            "./src/assets/projects/POSTK2A.png",
-            "./src/assets/projects/POSTK2A4.png",
-            "./src/assets/projects/POSTK2A5.png",
-            "./src/assets/projects/POSTK2A6.png"
+            "/src/assets/projects/POSTK2A2.png",
+            "/src/assets/projects/POSTK2A1.png",
+            "/src/assets/projects/POSTK2A3.png",
+            "/src/assets/projects/POSTK2A7.png",
+            "/src/assets/projects/POSTK2A.png",
+            "/src/assets/projects/POSTK2A4.png",
+            "/src/assets/projects/POSTK2A5.png",
+            "/src/assets/projects/POSTK2A6.png"
           ],
           github: "#",
           live: "#"
@@ -100,11 +100,10 @@ const Projects = () => {
           description: "Campaign visuals for Takhassous with consistent typography and layout systems.",
           technologies: ["Photoshop", "Illustrator", "Content Design"],
           images: [
-            "./src/assets/projects/takhassous1.png",
-            "./src/assets/projects/takhassous2.png",
-            "./src/assets/projects/takhassous3.png",
-            "./src/assets/projects/takhassous4.png"
- 
+            "/src/assets/projects/takhassous1.png",
+            "/src/assets/projects/takhassous2.png",
+            "/src/assets/projects/takhassous3.png",
+            "/src/assets/projects/takhassous4.png"
           ],
           github: "#",
           live: "#"
@@ -115,9 +114,9 @@ const Projects = () => {
           description: "Brand identity and logo design for Strategy Digital, a digital services company.",
           technologies: ["Illustrator", "Photoshop", "Branding"],
           images: [
-            "./src/assets/projects/SD1.png ",
-            "./src/assets/projects/SD2.png",
-            "./src/assets/projects/SD3.png"
+            "/src/assets/projects/SD1.png",
+            "/src/assets/projects/SD2.png",
+            "/src/assets/projects/SD3.png"
           ],
           github: "#",
           live: "#"
@@ -133,7 +132,7 @@ const Projects = () => {
           title: "Student Portal System",
           description: "Student management portal with courses, grades, and authentication.",
           technologies: ["React", "TypeScript", "Tailwind CSS" , "MongoDB" , "Node.js" , "Express"],
-          image: "./src/assets/projects/student-portal.png",
+          image: "/src/assets/projects/student-portal.png",
           github: "https://github.com/peppa234/Student-Portal",
           live: "#"
         },
@@ -142,7 +141,7 @@ const Projects = () => {
           title: "Vital Care Clinic Management System",
           description: "Clinic operations app for appointments, patients, and Emails.",
           technologies: ["HTML&CSS", "Bootstrap", "JQuery" , "Php" , "MySQL" , "JavaScript"],
-          image: "./src/assets/projects/VitalCare.png",
+          image: "/src/assets/projects/VitalCare.png",
           github: "#",
           live: "#"
         },
@@ -151,7 +150,7 @@ const Projects = () => {
           title: "Blog Platform",
           description: "Content platform with posts (CRUD), login and register.",
           technologies: ["Node.js", "Express", "SQLlite" , "EJS" , "JavaScript" , "HTML&CSS"],
-          image: "./src/assets/projects/Blog-Platform.png",
+          image: "/src/assets/projects/Blog-Platform.png",
           github: "https://github.com/peppa234/Blog-Platfrom",
           live: "#"
         },
@@ -160,7 +159,7 @@ const Projects = () => {
           title: "Weather Application",
           description: "Weather app showing current conditions based on the city using Weather API.",
           technologies: ["HTML", "CSS", "JavaScript" , "Weather API"],
-          image: "./src/assets/projects/weather-app.png",
+          image: "/src/assets/projects/weather-app.png",
           github: "https://github.com/peppa234/Weather-App",
           live: "https://peppa234.github.io/Weather-App/"
         },
@@ -169,7 +168,7 @@ const Projects = () => {
           title: "To-Do List App",
           description: "To do list app with options to add, delete and complete tasks",
           technologies: ["React", "JavaScript", "CSS"],
-          image: "./src/assets/projects/To-Do-List.png",
+          image: "/src/assets/projects/To-Do-List.png",
           github: "https://github.com/peppa234/To-Do-List-App",
           live: "#"
         },
@@ -178,7 +177,7 @@ const Projects = () => {
           title: "Color Picker App",
           description: "Interactive color tool with palette generation and copy-to-clipboard.",
           technologies: ["React", "JavaScript", "CSS"],
-          image: "./src/assets/projects/ColorPicker.png",
+          image: "/src/assets/projects/ColorPicker.png",
           github: "https://github.com/peppa234/ColorPickerApp",
           live: "#"
         }
@@ -202,7 +201,7 @@ const Projects = () => {
           title: "Tic Tac Toe – Minimax Agent",
           description: "Player vs Computer using Minimax with optimal strategy and Player Vs Player.",
           technologies: ["Python", "Flask","Minimax Algorithm", "HTML&CSS" , "JavaScript"],
-          image: "./src/assets/projects/TicTacToe.png",
+          image: "/src/assets/projects/TicTacToe.png",
           github: "https://github.com/LyesHADJAR/TicTacToe",
           live: "#"
         },
