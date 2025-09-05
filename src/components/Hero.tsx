@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Group8 from "../assets/HeroSectionImage.png";
 
 const Hero = () => {
@@ -64,25 +65,25 @@ const Hero = () => {
             role="group"
             aria-label="Action buttons"
           >
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="flex justify-center items-center w-full sm:w-[220px] md:w-[250px] lg:w-[274px] h-[60px] md:h-[70px] lg:h-[79px] px-4 md:px-[74px] py-2 md:py-[29px] rounded-[61px] bg-[#BF6BB3] shadow-[0_4px_37.1px_0_rgba(222,8,212,0.79)] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_45px_0_rgba(222,8,212,0.9)] focus:outline-none focus:ring-2 focus:ring-[#BF6BB3] focus:ring-offset-2 focus:ring-offset-transparent"
               aria-label="Contact Aicha Brihmouche"
             >
               <span className="whitespace-nowrap text-white font-orbitron text-lg sm:text-xl md:text-2xl lg:text-[32px] font-extrabold leading-normal opacity-[0.94] drop-shadow-[0_4px_4px_rgba(222,8,212,0.79)]">
                 Contact Me
               </span>
-            </a>
+            </Link>
 
-            <a
-              href="/projects"
+            <Link
+              to="/projects"
               className="flex justify-center items-center w-full sm:w-[220px] md:w-[250px] lg:w-[285px] h-[60px] md:h-[70px] lg:h-[79px] px-4 md:px-[74px] py-2 md:py-[29px] rounded-[61px] border-2 border-[#BF6BB3] bg-transparent shadow-[0_4px_107.9px_0_rgba(222,8,212,0.79)] cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_120px_0_rgba(222,8,212,0.9)] focus:outline-none focus:ring-2 focus:ring-[#BF6BB3] focus:ring-offset-2 focus:ring-offset-transparent"
               aria-label="View Aicha's projects portfolio"
             >
               <span className="text-white font-orbitron text-lg sm:text-xl md:text-2xl lg:text-[32px] font-extrabold leading-normal opacity-[0.94] drop-shadow-[0_4px_4px_rgba(222,8,212,0.79)]">
                 Projects
               </span>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button-variants";
+import { Link } from "react-router-dom";
 import image8 from "../assets/JourneyImage.png";
 
 const ExperienceSection = () => {
@@ -24,14 +25,14 @@ const ExperienceSection = () => {
 
             {/* Button with consistent spacing */}
             <div className="pt-4 md:pt-6"> 
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="flex justify-center items-center w-full sm:w-[220px] md:w-[250px] lg:w-[274px] h-[60px] md:h-[70px] lg:h-[79px] px-4 md:px-[74px] py-2 md:py-[29px] rounded-[61px] bg-[#BF6BB3] shadow-[0_4px_37.1px_0_rgba(222,8,212,0.79)] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-[0_4px_45px_0_rgba(222,8,212,0.9)]"
               >
                 <span className="whitespace-nowrap text-white font-orbitron text-base sm:text-lg md:text-xl lg:text-2xl font-extrabold leading-normal opacity-[0.94] drop-shadow-[0_4px_4px_rgba(222,8,212,0.79)]">
                   Discover More
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
 
