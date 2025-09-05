@@ -6,6 +6,35 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
+// Import all project images
+import studentPortalImg from "@/assets/projects/student-portal.png";
+import vitalCareImg from "@/assets/projects/VitalCare.png";
+import blogPlatformImg from "@/assets/projects/Blog-Platform.png";
+import weatherAppImg from "@/assets/projects/weather-app.png";
+import toDoListImg from "@/assets/projects/To-Do-List.png";
+import colorPickerImg from "@/assets/projects/ColorPicker.png";
+import ticTacToeImg from "@/assets/projects/TicTacToe.png";
+
+// Design project images
+import k2aUIUX1 from "@/assets/projects/K2AUIUX1.png";
+import k2aUIUX2 from "@/assets/projects/K2AUIUX2.png";
+import k2aUIUX3 from "@/assets/projects/K2AUIUX3.png";
+import postK2A1 from "@/assets/projects/POSTK2A1.png";
+import postK2A2 from "@/assets/projects/POSTK2A2.png";
+import postK2A3 from "@/assets/projects/POSTK2A3.png";
+import postK2A4 from "@/assets/projects/POSTK2A4.png";
+import postK2A5 from "@/assets/projects/POSTK2A5.png";
+import postK2A6 from "@/assets/projects/POSTK2A6.png";
+import postK2A7 from "@/assets/projects/POSTK2A7.png";
+import postK2A from "@/assets/projects/POSTK2A.png";
+import takhassous1 from "@/assets/projects/takhassous1.png";
+import takhassous2 from "@/assets/projects/takhassous2.png";
+import takhassous3 from "@/assets/projects/takhassous3.png";
+import takhassous4 from "@/assets/projects/takhassous4.png";
+import sd1 from "@/assets/projects/SD1.png";
+import sd2 from "@/assets/projects/SD2.png";
+import sd3 from "@/assets/projects/SD3.png";
+
 // Local carousel for design cards with arrows and dots
 const DesignImagesCarousel = ({ images, title }: { images: string[]; title: string }) => {
   const [api, setApi] = React.useState<any>(null);
@@ -69,9 +98,9 @@ const Projects = () => {
           description: "Website UI/UX for K2A rental cars with brand-consistent components and flows.",
           technologies: ["Figma", "Design System", "Prototyping"],
           images: [
-            "/src/assets/projects/K2AUIUX1.png",
-            "/src/assets/projects/K2AUIUX3.png",
-            "/src/assets/projects/K2AUIUX2.png"
+            k2aUIUX1,
+            k2aUIUX3,
+            k2aUIUX2
           ],
           github: "#",
           live: "#"
@@ -82,14 +111,14 @@ const Projects = () => {
           description: "Engaging post series for K2A brand promotions and campaigns.",
           technologies: ["Photoshop", "Illustrator", "Branding" , "Marketing"],
           images: [
-            "/src/assets/projects/POSTK2A2.png",
-            "/src/assets/projects/POSTK2A1.png",
-            "/src/assets/projects/POSTK2A3.png",
-            "/src/assets/projects/POSTK2A7.png",
-            "/src/assets/projects/POSTK2A.png",
-            "/src/assets/projects/POSTK2A4.png",
-            "/src/assets/projects/POSTK2A5.png",
-            "/src/assets/projects/POSTK2A6.png"
+            postK2A2,
+            postK2A1,
+            postK2A3,
+            postK2A7,
+            postK2A,
+            postK2A4,
+            postK2A5,
+            postK2A6
           ],
           github: "#",
           live: "#"
@@ -100,10 +129,10 @@ const Projects = () => {
           description: "Campaign visuals for Takhassous with consistent typography and layout systems.",
           technologies: ["Photoshop", "Illustrator", "Content Design"],
           images: [
-            "/src/assets/projects/takhassous1.png",
-            "/src/assets/projects/takhassous2.png",
-            "/src/assets/projects/takhassous3.png",
-            "/src/assets/projects/takhassous4.png"
+            takhassous1,
+            takhassous2,
+            takhassous3,
+            takhassous4
           ],
           github: "#",
           live: "#"
@@ -114,9 +143,9 @@ const Projects = () => {
           description: "Brand identity and logo design for Strategy Digital, a digital services company.",
           technologies: ["Illustrator", "Photoshop", "Branding"],
           images: [
-            "/src/assets/projects/SD1.png",
-            "/src/assets/projects/SD2.png",
-            "/src/assets/projects/SD3.png"
+            sd1,
+            sd2,
+            sd3
           ],
           github: "#",
           live: "#"
@@ -132,7 +161,7 @@ const Projects = () => {
           title: "Student Portal System",
           description: "Student management portal with courses, grades, and authentication.",
           technologies: ["React", "TypeScript", "Tailwind CSS" , "MongoDB" , "Node.js" , "Express"],
-          image: "/src/assets/projects/student-portal.png",
+          image: studentPortalImg,
           github: "https://github.com/peppa234/Student-Portal",
           live: "#"
         },
@@ -141,7 +170,7 @@ const Projects = () => {
           title: "Vital Care Clinic Management System",
           description: "Clinic operations app for appointments, patients, and Emails.",
           technologies: ["HTML&CSS", "Bootstrap", "JQuery" , "Php" , "MySQL" , "JavaScript"],
-          image: "/src/assets/projects/VitalCare.png",
+          image: vitalCareImg,
           github: "#",
           live: "#"
         },
@@ -150,7 +179,7 @@ const Projects = () => {
           title: "Blog Platform",
           description: "Content platform with posts (CRUD), login and register.",
           technologies: ["Node.js", "Express", "SQLlite" , "EJS" , "JavaScript" , "HTML&CSS"],
-          image: "/src/assets/projects/Blog-Platform.png",
+          image: blogPlatformImg,
           github: "https://github.com/peppa234/Blog-Platfrom",
           live: "#"
         },
@@ -159,7 +188,7 @@ const Projects = () => {
           title: "Weather Application",
           description: "Weather app showing current conditions based on the city using Weather API.",
           technologies: ["HTML", "CSS", "JavaScript" , "Weather API"],
-          image: "/src/assets/projects/weather-app.png",
+          image: weatherAppImg,
           github: "https://github.com/peppa234/Weather-App",
           live: "https://peppa234.github.io/Weather-App/"
         },
@@ -168,7 +197,7 @@ const Projects = () => {
           title: "To-Do List App",
           description: "To do list app with options to add, delete and complete tasks",
           technologies: ["React", "JavaScript", "CSS"],
-          image: "/src/assets/projects/To-Do-List.png",
+          image: toDoListImg,
           github: "https://github.com/peppa234/To-Do-List-App",
           live: "#"
         },
@@ -177,7 +206,7 @@ const Projects = () => {
           title: "Color Picker App",
           description: "Interactive color tool with palette generation and copy-to-clipboard.",
           technologies: ["React", "JavaScript", "CSS"],
-          image: "/src/assets/projects/ColorPicker.png",
+          image: colorPickerImg,
           github: "https://github.com/peppa234/ColorPickerApp",
           live: "#"
         }
@@ -201,7 +230,7 @@ const Projects = () => {
           title: "Tic Tac Toe – Minimax Agent",
           description: "Player vs Computer using Minimax with optimal strategy and Player Vs Player.",
           technologies: ["Python", "Flask","Minimax Algorithm", "HTML&CSS" , "JavaScript"],
-          image: "/src/assets/projects/TicTacToe.png",
+          image: ticTacToeImg,
           github: "https://github.com/LyesHADJAR/TicTacToe",
           live: "#"
         },
