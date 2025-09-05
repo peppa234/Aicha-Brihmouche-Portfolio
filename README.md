@@ -51,8 +51,12 @@ Welcome to my digital universe! I'm Aicha, a passionate creative professional cu
 
 
 
+## 🌐 Live Demo
+
+Experience the portfolio in action: **[https://aicha-brihmouche-portfolio.vercel.app/](https://aicha-brihmouche-portfolio.vercel.app/)**
+
 ## 📬 Let's Connect
 
 - **Email**: aichabrihmouche@gmail.com
-- **LinkedIn**: [linkedin.com/in/aicha-brihmouche]([https://www.linkedin.com/in/aicha-brihmouche](https://www.linkedin.com/in/aicha-brihmouche-a51730300/))
+- **LinkedIn**: [linkedin.com/in/aicha-brihmouche](https://www.linkedin.com/in/aicha-brihmouche-a51730300/)
 - **GitHub**: [github.com/peppa234](https://github.com/peppa234)
