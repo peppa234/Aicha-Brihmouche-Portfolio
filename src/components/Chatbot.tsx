@@ -162,11 +162,11 @@ const Chatbot = () => {
     "projects_web": {
       "id": "web-projects",
       "title": "Web Development Projects",
-      "content": "Aicha has built comprehensive web applications including a Student Portal System with React/TypeScript, Vital Care Clinic Management System, Blog Platform, Weather Application, To-Do List App, and Color Picker App. Her projects demonstrate full-stack capabilities with modern web technologies.",
+      "content": "Aicha has built comprehensive web applications including a Student Portal System with React/TypeScript, Vital Care Clinic Management System, Blog Platform, Weather Application, and Elheiba Architecture Agency. Her projects demonstrate full-stack capabilities with modern web technologies including Next.js and MongoDB.",
       "category": "Projects",
       "subcategory": "Web Development",
       "keywords": ["React", "Full-stack", "Web Development", "Portal", "Management System", "JavaScript", "TypeScript"],
-      "entities": ["Student Portal", "Vital Care", "Blog Platform", "Weather App", "To-Do List", "Color Picker"],
+      "entities": ["Student Portal", "Vital Care", "Blog Platform", "Weather App", "Elheiba Architecture Agency"],
       "context": "Web development project portfolio",
       "priority": 4,
       "data": [
@@ -208,22 +208,13 @@ const Chatbot = () => {
           "demo": "https://peppa234.github.io/Weather-App/"
         },
         {
-          "name": "To-Do List App",
-          "description": "To do list app with options to add, delete and complete tasks",
-          "tech": ["React", "JavaScript", "CSS"],
-          "role": "Frontend developer",
-          "duration": "1 week",
-          "highlights": ["Task management", "Interactive UI", "State management"],
-          "github": "https://github.com/peppa234/To-Do-List-App"
-        },
-        {
-          "name": "Color Picker App",
-          "description": "Interactive color tool with palette generation and copy-to-clipboard",
-          "tech": ["React", "JavaScript", "CSS"],
-          "role": "Frontend developer",
-          "duration": "1 week",
-          "highlights": ["Color theory", "Interactive design", "Utility tool"],
-          "github": "https://github.com/peppa234/ColorPickerApp"
+          "name": "Elheiba Architecture Agency",
+          "description": "Full-stack web application for an architecture company with modern design and deployment on VPS",
+          "tech": ["Next.js", "MongoDB", "VPS", "Full Stack"],
+          "role": "Full-stack developer",
+          "duration": "2 months",
+          "highlights": ["Next.js framework", "MongoDB database", "VPS deployment", "Architecture portfolio"],
+          "github": "#"
         }
       ]
     },
@@ -497,7 +488,7 @@ const Chatbot = () => {
     // Extract entities
     const entityPatterns = {
       skills: ['python', 'javascript', 'react', 'design', 'ui/ux', 'figma', 'photoshop', 'illustrator', 'pandas', 'tensorflow', 'node.js', 'express', 'mongodb', 'mysql'],
-      projects: ['7wess', 'student portal', 'weather app', 'titanic', 'blog', 'vital care', 'color picker', 'to-do', 'k2a', 'takhassous', 'strategy digital'],
+      projects: ['7wess', 'student portal', 'weather app', 'titanic', 'blog', 'vital care', 'elheiba', 'architecture', 'k2a', 'takhassous', 'strategy digital'],
       companies: ['code alpha', 'prodigy', 'ensia', 'k2a', 'datacamp', 'google', 'john hopkins'],
       achievements: ['hackathon', 'winner', 'award', 'competition', 'certification', 'datacamp', 'google'],
       certifications: ['certification', 'certificate', 'datacamp', 'google', 'john hopkins', 'prodigy', 'associate data scientist', 'digital marketing']
@@ -600,7 +591,7 @@ const Chatbot = () => {
           const designProjects = portfolioData.projects_design.data;
           response = `Aicha's design projects showcase her creative abilities: ${designProjects.map((p: any) => `**${p.name}** - ${p.description} (Created with ${p.tech.slice(0, 3).join(', ')})`).join('. ')}`;
         } else {
-          response = `Aicha has built an impressive portfolio across **Web Development** (6 projects including Student Portal System, Vital Care Clinic Management, Blog Platform, Weather App, To-Do List, Color Picker), **AI/ML** (5 projects including 7wess AI Touristic App, Tic Tac Toe Minimax Agent, Predictive Modeling, A/B Testing Analysis, Titanic Classification), and **Design** (4 projects including K2A UI/UX, K2A Social Media Campaigns, Takhassous Campaigns, Strategy Digital Logo). Each project demonstrates different aspects of her multidisciplinary skills.`;
+          response = `Aicha has built an impressive portfolio across **Web Development** (5 projects including Student Portal System, Vital Care Clinic Management, Blog Platform, Weather App, Elheiba Architecture Agency), **AI/ML** (5 projects including 7wess AI Touristic App, Tic Tac Toe Minimax Agent, Predictive Modeling, A/B Testing Analysis, Titanic Classification), and **Design** (4 projects including K2A UI/UX, K2A Social Media Campaigns, Takhassous Campaigns, Strategy Digital Logo). Each project demonstrates different aspects of her multidisciplinary skills.`;
         }
         suggestions = ["Show me the technical details", "What challenges did she solve?", "See her design projects"];
         break;

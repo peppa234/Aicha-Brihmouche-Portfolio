@@ -11,8 +11,6 @@ import studentPortalImg from "@/assets/projects/student-portal.png";
 import vitalCareImg from "@/assets/projects/VitalCare.png";
 import blogPlatformImg from "@/assets/projects/Blog-Platform.png";
 import weatherAppImg from "@/assets/projects/weather-app.png";
-import toDoListImg from "@/assets/projects/To-Do-List.png";
-import colorPickerImg from "@/assets/projects/ColorPicker.png";
 import ticTacToeImg from "@/assets/projects/TicTacToe.png";
 
 // Design project images
@@ -194,20 +192,11 @@ const Projects = () => {
         },
         {
           id: 205,
-          title: "To-Do List App",
-          description: "To do list app with options to add, delete and complete tasks",
-          technologies: ["React", "JavaScript", "CSS"],
-          image: toDoListImg,
-          github: "https://github.com/peppa234/To-Do-List-App",
-          live: "#"
-        },
-        {
-          id: 206,
-          title: "Color Picker App",
-          description: "Interactive color tool with palette generation and copy-to-clipboard.",
-          technologies: ["React", "JavaScript", "CSS"],
-          image: colorPickerImg,
-          github: "https://github.com/peppa234/ColorPickerApp",
+          title: "Elheiba Architecture Agency",
+          description: "Full-stack web application for an architecture company with modern design and deployment on VPS.",
+          technologies: ["Next.js", "MongoDB", "VPS", "Full Stack"],
+          image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=400&fit=crop",
+          github: "#",
           live: "#"
         }
       ]
