@@ -212,7 +212,7 @@ const Projects = () => {
           technologies: ["Python", "A*", "BFS", "DFS", "CSP" , "React" , "Tailwind CSS" , "Flask"],
           image: "https://globallycool.nl/cms2022/wp-content/uploads/2021/07/vecteezy_couple-of-tourist-come-to-visit-at-wat-phra-si-sanphet_14325932-scaled.jpg",
           github: "https://github.com/Ashreeef/AI-Project-Touristic-Tour-Recommendation",
-          live: "#"
+          live: "https://hwess.onrender.com/"
         },
         {
           id: 302,
@@ -246,6 +246,40 @@ const Projects = () => {
           technologies: ["Python", "Pandas", "scikit-learn" , "statsmodel" , "Matplotlib" , "Seaborn"],
           image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnfPsfgQ-g0sHtowqfP2LHp0skXAjzbXJdtA&s",
           github: "https://github.com/peppa234/CodeAlpha_Titanic_Classification"
+        },
+        {
+          id: 306,
+          title: "+16 Machine Learning Projects",
+          description: "Comprehensive machine learning course projects covering classification (spam detection, iris classification), regression (house price prediction, linear regression), time series forecasting, anomaly detection, clustering, recommendation systems, sentiment analysis, and deep learning models.",
+          technologies: ["Python", "scikit-learn", "TensorFlow", "Pandas", "Numpy", "Matplotlib", "NLTK", "XGBoost"],
+          image: "https://f.hubspotusercontent40.net/hubfs/2488049/Machine%20Learning%20Cover%20Image.jpg",
+          noLinks: true
+        },
+        {
+          id: 307,
+          title: "RAG-Based Chatbot",
+          description: "Intelligent chatbot powered by Retrieval-Augmented Generation for context-aware responses and knowledge base integration.",
+          technologies: ["Python", "LLM", "RAG", "Vector Database", "Embeddings", "NLP"],
+          image: "https://media.licdn.com/dms/image/v2/D4D12AQEQzIYVlBFjbQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1715162824639?e=2147483647&v=beta&t=acpum7GMelHO3F48gGMw9lj_x5xxDLXNDr8SdE7i5Jg",
+          github: "https://github.com/peppa234/Aicha-Brihmouche-Portfolio",
+          live: "#"
+        },
+        {
+          id: 308,
+          title: "Text Summarizer",
+          description: "Flask web app and JSON API that summarizes arbitrary text using the BART large CNN model from Hugging Face Transformers with configurable min/max length.",
+          technologies: ["Python", "Flask", "Hugging Face", "BART", "Transformers", "PyTorch", "Tailwind CSS"],
+          image: "https://cdn.prod.website-files.com/61e7d259b7746e3f63f0b6be/64eca71f9097536a88403515_tutorial_how_to_summarize_text_with_ai%20(1).webp",
+          github: "https://github.com/peppa234/text-summarizer",
+          live: "#"
+        },
+        {
+          id: 309,
+          title: "Computer Vision – YOLOv11 Object Detection",
+          description: "Advanced object detection and image classification system for ASAL (Algerian Space Agency) using YOLOv11 architecture with real-time detection capabilities.",
+          technologies: ["Python", "YOLOv11", "OpenCV", "PyTorch", "Deep Learning", "Computer Vision"],
+          image: "https://deeplobe.ai/wp-content/uploads/2023/06/Object-detection-Real-world-applications-and-benefits.png",
+          noLinks: true
         }
       ]
     }
@@ -466,8 +500,8 @@ const Projects = () => {
                             ))}
                           </motion.div>
 
-                          {/* Project Links - Only show for non-design projects */}
-                          {category.id !== "design" && (
+                          {/* Project Links - Only show for non-design projects and projects without noLinks flag */}
+                          {category.id !== "design" && !(project as any).noLinks && (
                             <motion.div 
                               className="flex gap-3"
                               initial={{ opacity: 0, y: 20 }}
@@ -487,8 +521,8 @@ const Projects = () => {
                               >
                                 GitHub
                               </motion.a>
-                              {/* Only show Live Demo for weather app */}
-                              {project.id === 204 && (
+                              {/* Show Live Demo for weather app and 7wess */}
+                              {(project.id === 204 || project.id === 301) && (
                                 <motion.a 
                                   href={project.live}
                                   target="_blank"
